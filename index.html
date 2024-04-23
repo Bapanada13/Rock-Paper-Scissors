@@ -4,8 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    * {color: #cecac3;}
+    body {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      background-color: #181a1b;
+    }
+    button {
+      font-size: 30px;
+      width: 150px;
+      margin: 30px;
+      background-color: #cecac3;
+      color: #181a1b;
+      border-radius: 6px;
+      cursor: pointer;      
+    }
+    #score {
+      font-size: 30px;
+    }
+  </style>
 </head>
 <body>
+  <h1>Rock Paper Scissors SHOOT!</h1>
+  <div id="score">Player - <span>0 0</span> - Computer</div>
+  <div>
+    <button id="rock">Rock</button>
+    <button id="paper">Paper</button>
+    <button id="scissors">Scissors</button>
+  </div>
   <script src="./game.js"></script>
 </body>
 </html>
